@@ -72,3 +72,15 @@ Plataforma web SaaS desarrollada con **Next.js 16 (App Router)** y **React 19** 
 - **Frederick Jimenez** — Motor de conciliación, parser CSV, APIs REST y pruebas unitarias
 - **Daniela Beltran** — Landing page, vistas del dashboard, historial y reportes
 - **Ana Villanova** — SEO, configuración PM2, pipelines CI/CD y documentación técnica
+
+
+---
+
+## Compilación (Build) y Despliegue (Deploy)
+
+### Compilación para producción
+```bash
+npm ci
+npm test
+npm run build
+npm run start
