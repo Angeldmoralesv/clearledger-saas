@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ClearLedger SaaS — Conciliación Financiera Automatizada
 
-## Getting Started
+Plataforma web SaaS desarrollada con **Next.js 16 (App Router)** y **React 19** para automatizar el cruce de facturas emitidas en ERP (como Siigo) contra pagos reportados por empresas de factoring, detectando discrepancias por factura y generando reportes de cierre contable.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Enlace a la aplicación en producción
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dominio público:** `https://tu-dominio-personalizado.tech` *(actualizar con su dominio configurado en DNS)*
+- **Health check:** `https://tu-dominio-personalizado.tech/api/health`
+- **Usuario demo:** `demo@clearledger.com` / `clearledger123`
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Getting Started (Instalación y ejecución local)
 
-## Learn More
+### Requisitos previos
+- **Node.js** 20+ o 22 LTS
+- **npm** 10+
+- **Git**
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Pasos de instalación
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/Angeldmoralesv/clearledger-saas.git
+   cd clearledger-saas
+   ```
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+3. Configurar variables de entorno copiando `.env.example` a `.env.local`:
+   ```bash
+   cp .env.example .env.local
+   ```
+   Edita `SESSION_SECRET` con una clave aleatoria segura.
+4. Ejecutar pruebas unitarias y servidor de desarrollo:
+   ```bash
+   npm test
+   npm run dev
+   ```
+5. Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
