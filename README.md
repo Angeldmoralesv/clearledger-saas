@@ -40,3 +40,35 @@ Plataforma web SaaS desarrollada con **Next.js 16 (App Router)** y **React 19** 
    npm run dev
    ```
 5. Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
+
+
+---
+
+## Evidencias de funcionamiento
+
+> *Nota:* Guarda tus capturas reales en `docs/images/` (`landing.png`, `dashboard.png`, `arquitectura-aws.png`) y enlázalas así:
+
+![Landing ClearLedger](docs/images/landing.png)
+![Dashboard ClearLedger](docs/images/dashboard.png)
+![Arquitectura AWS](docs/images/arquitectura-aws.png)
+
+---
+
+## Datos de prueba y Recursos adicionales
+
+- **CSV de prueba:** Usa `docs/samples/facturas_erp.csv` y `docs/samples/pagos_factoring.csv` en **Dashboard → Conciliaciones**.
+- **Documentación oficial:**
+  - [Next.js App Router Docs](https://nextjs.org/docs)
+  - [React 19 Documentation](https://react.dev)
+  - [GitHub Actions Documentation](https://docs.github.com/actions)
+  - [AWS Academy Learner Lab](https://aws.amazon.com/training/awsacademy/)
+
+---
+
+## Equipo de desarrollo — Universidad de la Costa
+
+- **Ángel Morales** — Componentes UI interactivos, fronteras App Router y Health Check API
+- **Omar Gutiérrez** — Autenticación, criptografía de sesiones, proxy de rutas y persistencia
+- **Frederick Jimenez** — Motor de conciliación, parser CSV, APIs REST y pruebas unitarias
+- **Daniela Beltran** — Landing page, vistas del dashboard, historial y reportes
+- **Ana Villanova** — SEO, configuración PM2, pipelines CI/CD y documentación técnica
