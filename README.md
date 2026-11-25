@@ -1,6 +1,6 @@
 # ClearLedger SaaS — Conciliación Financiera Automatizada
 
-Plataforma web SaaS desarrollada con **Next.js 16 (App Router)** y **React 19** para automatizar el cruce de facturas emitidas en ERP (como Siigo) contra pagos reportados por empresas de factoring, detectando discrepancias por factura y generando reportes de cierre contable.
+Plataforma web SaaS desarrollada con **Next.js 16 (App Router)** y **React 19** para automatizar el cruce de facturas emitidas en ERP (como Siigo nube) contra pagos reportados por empresas de factoring, detectando discrepancias por factura y generando reportes de cierre contable.
 
 ---
 
