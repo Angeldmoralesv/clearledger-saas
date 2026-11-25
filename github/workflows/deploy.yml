@@ -1,0 +1,26 @@
+name: CD - Despliegue a AWS EC2
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Compilar y desplegar en EC2
+    runs-on: ubuntu-latest
+    if: ${{ vars.ENABLE_EC2_DEPLOY == 'true' }}
+
+    steps:
+      - name: Desplegar por SSH en instancia EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/clearledger-saas
+            git pull origin main
+            npm ci
+            npm run build
+            pm2 reload ecosystem.config.cjs --update-env || pm2 start ecosystem.config.cjs
