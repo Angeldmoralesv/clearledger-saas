@@ -6,8 +6,7 @@ Plataforma web SaaS desarrollada con **Next.js 16 (App Router)** y **React 19** 
 
 ## Enlace a la aplicación en producción
 
-- **Dominio público:** `https://tu-dominio-personalizado.tech` *(actualizar con su dominio configurado en DNS)*
-- **Health check:** `https://tu-dominio-personalizado.tech/api/health`
+- **Dominio público:** http://getclearledger.xyz/
 - **Usuario demo:** `demo@clearledger.com` / `clearledger123`
 
 ---
