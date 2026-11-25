@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "demo-user",
+      "name": "Analista Demo",
+      "email": "demo@clearledger.com",
+      "passwordHash": "4cfd3229760a5459f2afbac57cb5b077:eb6a29a43b6aa68c75daac251c45f0600c3facffa866e6c900c781232ad2b174211a49770a52be0b7b7b997fe41245e542bd2e080bcb7eacd56c147262766e50",
+      "companyId": "demo-company",
+      "role": "admin",
+      "createdAt": "2026-11-24T00:00:00.000Z"
+    }
+  ],
+  "companies": [
+    {
+      "id": "demo-company",
+      "name": "ClearLedger Demo",
+      "erpProvider": "Siigo",
+      "erpApiKey": "",
+      "alertThreshold": 500000,
+      "createdAt": "2026-11-24T00:00:00.000Z"
+    }
+  ],
+  "runs": [],
+  "resolutions": []
+}
